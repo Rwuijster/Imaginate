@@ -18,23 +18,41 @@ header {
 
 }
 
-a {
-  background-color: red;
-}
-
 .headercontainer {
   display: grid;
-  grid-template-columns: 20% 70% auto;
+  padding: 12px;
+  grid-template-columns: 120px 1fr auto;
+  height: 100%;
 }
 
-.headercontainer a img {
-  width: 50px;
-  height: 50px;
+img {
+  width: 40%;
+  height: 100%;
 }
 
 nav {
   grid-column: 3;
+  height: 100%;
+  width: 48px;
+  background-color: darkblue;  
 }
+
+a {
+  background-color: white;
+  padding: 1px;
+}
+
+
+
+.headercontainer > * {
+}
+
+.bannerlogo {
+  background-color: red;
+
+}
+
+
 
 .pagecontainer {
   style: grid;
@@ -45,10 +63,6 @@ nav {
 }
 
 
-nav {
-  background-color: darkgray;
-}
-
 
 main {
   background-color: green;
@@ -57,3 +71,6 @@ main {
 footer {
   background-color: navy;
 }
+
+/* media breakpoint 1000px
+turn button into wide nav */
